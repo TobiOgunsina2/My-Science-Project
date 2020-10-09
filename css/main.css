@@ -113,6 +113,8 @@ iframe{
     text-align: center;
 
     background-image: url("../img/a03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .second-slide h1{
