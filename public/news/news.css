@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body{
+    background-image: url("../img/wp7016574.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+
+    color: rgb(226, 226, 226);
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin: 0 230px;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+a img{
+    width: 100px;
+    position: absolute;
+    left: 2vw;
+    top: 3vh;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 4vh;
+    right: 3vh;
+}
+
+li{
+    margin: 0 3vh;
+}
+
+li a{
+    font-size: 3vw;
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(127, 8, 206);
+}
+
+li a:hover{
+    color: rgb(110, 49, 110);
+}
+
+.news{
+    color: purple;
+    font-weight: 500;
+}
+
+.construction{
+    position: relative;
+    top: 25vh;
+    color: black;
+    text-align: left;
+}
+
+.construction h1{
+    font-size: 5vw;
+}
+
+.construction span{
+    color: rgb(10, 92, 243);
+}
+
+.construction p{
+    font-size: 1.7vw;
+    font-weight: 560;
+    color: #9ce4f7;
+    background-color: rgba(92, 3, 92, 0.15);
+}
+
+.construction button{
+    background-color: rgb(90, 7, 7);
+
+    border-radius: 0.3em;
+    border: none;
+
+    font-size: 2vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: rgb(243, 239, 239);
+
+    margin-top: 40px;
+    width: 17vw;
+    height: 7vh;
+}
+
+.construction button a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.construction button:hover{
+    background-color: rgb(187, 58, 58);
+}

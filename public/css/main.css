@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.top{
+    background-image: url("../img/kurzgesagt-new-horizons-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 99.2vw;
+    height: 110vh;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 40px;
+
+    position: relative;
+    bottom: 85px;
+}
+
+ul li{
+    display: flex;
+}
+
+ul li a {
+    font-size: 3vw;
+    color: purple;
+    text-decoration: none;
+
+    margin: 0 3vh;
+}
+
+ul li a:hover {
+    color: rgb(192, 1, 192);
+}
+
+a img{
+    width: 100px;
+    margin: 14px 40px;
+}
+
+.center{
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-size: 60px;
+}
+
+.first-slide{
+    height: 99vh;
+
+    background-image: url("../img/DexzJJcW4AEbkXv.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 26px;
+    padding-top: 67px;
+
+    font-family: "Brandon-Grotesque";
+}
+
+.first-slide h1{
+    font-size: 60px;
+    color: rgb(238, 255, 0);
+
+    font-family: "Primus", "Montserrat";
+}
+
+.first-slide p {
+    font-size: 30px;
+    margin-top: 2em;
+    color: rgb(0, 0, 0);
+    font-weight: 570;
+}
+
+.line1{
+    font-size: 40px;
+}
+
+.line2{
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(200, 255, 0);
+    text-decoration: underline;
+}
+
+.line2:hover{
+    color: rgb(170, 170, 1);
+}
+
+iframe{
+    margin: 0;
+    padding: 0;
+}
+
+.second-slide{
+    height: 103vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("../img/a03.png");
+}
+
+.second-slide h1{
+    font-size: 80px;
+}

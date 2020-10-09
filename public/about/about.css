@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body{
+    background-image: url("../img/b596a465fb8c1c01f97b075c877899f5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: rgb(226, 226, 226);
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin: 0 230px;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+a img{
+    width: 100px;
+    position: absolute;
+    left: 2vw;
+    top: 3vh;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 4vh;
+    right: 3vh;
+}
+
+li{
+    margin: 0 3vh;
+}
+
+li a{
+    font-size: 3vw;
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(127, 8, 206);
+}
+
+li a:hover{
+    color: rgb(110, 49, 110);
+}
+
+.about{
+    color: purple;
+    font-weight: 500;
+}
+
+h1{
+    position: relative;
+    top: 24vh;
+    margin-bottom: 0;
+
+    font-size: 2.13vw;
+}
+
+.bye{
+    margin-top: 30px;
+    font-size: 13vw;
+    font-size: 72px;
+    background: -webkit-linear-gradient( #eee, rgb(185, 154, 185), rgb(145, 94, 145), rgb(117, 48, 206));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

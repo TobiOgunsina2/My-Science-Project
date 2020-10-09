@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="../img/beaker.svg">
+</head>
+<body>
+
+   <nav>
+    
+        <a href="../index.html"><img src="../img/beaker.svg" alt="My Science Project"></a>
+
+           <ul>
+
+               <li><a href="../index.html">home</a></li>
+               <li><a href="../about/about.html">about</a></li>
+               <li><a href="../news/news.html">news</a></li>
+               <li><a href="#" class="contacts">contact</a></li>
+
+            </ul>
+
+    </nav> 
+
+    <h1>Contact</h1>
+
+    <form action = "contacts.html" method="POST" class="contact-form">
+
+        <select name="General Question" id="select" dropzone="">
+            <option value="General Question">General Question</option>
+            <option value="Report">Report</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Score">Score</option>
+        </select>
+
+        <input type="text" placeholder="Your e-mail" id="email">
+        <input type="text" placeholder="Your full name" id = "name">
+        <textarea name="" id="body" cols="20" rows="10" placeholder="Your message"></textarea>
+        <input type="button" value="Send" id="submitButton" onclick="sendEmail()">
+
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        document.getElementById('submitButton').addEventListener("click", submitForm)
+
+        function submitForm(e){
+            let email = document.querySelector('#email').value;
+            let name = document.querySelector('#name').value;
+            let message = document.querySelector('#body').value;
+            let option = document.getElementById('select').options[document.getElementById('select').selectedIndex].value;   
+
+            sendEmail(name, email, message, option)
+        }
+
+        function sendEmail(name, email, message, subject){
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "tobiogunsina02@gmail.com",
+                Password: "vjuytekprzdfnawd",
+                To: 'ogunsinao@cislagos.org',
+                From: "tobiogunsina02@gmail.com",
+                Subject: `${subject}`,
+                Body: `Name: ${name} <br/> Email: ${email} <br/><br/>${message}`,
+            }).then((message)=>{
+                window.open("../sent/sent.html", "_self")
+            })
+        }
+    </script>
+
+</body>
+</html>
