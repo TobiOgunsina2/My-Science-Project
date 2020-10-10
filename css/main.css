@@ -54,8 +54,30 @@ a img{
 .center{
     position: relative;
     text-align: center;
-    top: 200px;
+    top: 6vw;
     font-size: 60px;
+}
+
+.img{
+    margin-top: 23vh;
+}
+
+.img img{
+    width: 5vw;
+    transition: width 2s height 4s;
+}
+
+.img img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-19px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-19px); }
 }
 
 .first-slide{
